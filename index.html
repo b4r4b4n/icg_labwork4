@@ -71,8 +71,8 @@
     </Transform>
     </Transform>
     <!--treugolnik-->
-    <TimeSensor DEF="Time"cycleInterval="5"loop="true"></TimeSensor>
-    <CoordinateInterpolator DEF="CoordInt"key="0 0.5 1"keyValue="1 0 0, 1 2 1, 0 0 1,
+    <TimeSensor DEF="Time" cycleInterval="5" loop="true"></TimeSensor>
+    <CoordinateInterpolator DEF="CoordInt" key="0 0.5 1" keyValue="1 0 0, 1 2 1, 0 0 1,
                                                                  0 0 1, 1 0 0, 1 2 1,
                                                                  0 0 0, 0 0 0, 2 0 0,
                                                                  1 2 1, 0 0 0, 0 0 0,
@@ -120,10 +120,10 @@
           </Sphere>
         </Shape>
       </Transform>
-      <TimeSensor DEF="TS_mer"cycleInterval="58"loop="true"></TimeSensor>
-      <OrientationInterpolator DEF="OI_mer"key="0, 0.5, 1"keyValue="0 1 0 0, 0 1 0 3.14, 0 1 0 6.28"></OrientationInterpolator>
-      <ROUTE fromNode="TS_mer"fromField="fraction_changed"toNode="OI_mer"toField="set_fraction"></ROUTE>
-      <ROUTE fromNode="OI_mer"fromField="value_changed"toNode="mercury"toField="set_rotation"></ROUTE>
+      <TimeSensor DEF="TS_mer" cycleInterval="58" loop="true"></TimeSensor>
+      <OrientationInterpolator DEF="OI_mer" key="0, 0.5, 1" keyValue="0 1 0 0, 0 1 0 3.14, 0 1 0 6.28"></OrientationInterpolator>
+      <ROUTE fromNode="TS_mer" fromField="fraction_changed" toNode="OI_mer" toField="set_fraction"></ROUTE>
+      <ROUTE fromNode="OI_mer" fromField="value_changed" toNode="mercury" toField="set_rotation"></ROUTE>
       <!--Венера-->
       <Transform DEF="venus" translation="3.5 -0.5 4.5">
         <Shape>
